@@ -20,7 +20,8 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
         >
       <span
           style={{ background: dotColor }}
-          className="absolute inline-flex rounded-full h-2 w-2 right-2 top-2"
+          className="absolute inline-flex
+          rounded-full h-2 w-2 right-2 top-2"
       />
             {icon}
         </button>
@@ -31,7 +32,7 @@ const Navbar = () => {
     const { currentColor, activeMenu, setActiveMenu, handleClick, isClicked, setScreenSize, screenSize } = useStateContext();
 
     useEffect(() => {
-        const handleResize = () => setScreenSize(window.innerWidth);
+        const handleResize = () => setScreenSize(window.innerWidth); //set the screen size
 
         window.addEventListener('resize', handleResize);
 
