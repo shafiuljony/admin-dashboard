@@ -22,6 +22,7 @@ const Ecommerce = () => {
                             bgColor="blue"
                             text="Download"
                             borderRadius="10px"
+                            size="md"
                         />
                     </div>
                 </div>
@@ -72,12 +73,25 @@ const Ecommerce = () => {
                                 </p>
                                 <p className="text-gray-500 mt-1">Budget</p>
                             </div>
-                            <div mt-8>
+                            <div className={`mt-8`} >
                                 <p>
                                     <span className="text-3xl font-semibold">$43,438</span>
                                 </p>
                                 <p className="text-gray-500 mt-1">Expense</p>
                             </div>
+
+                            <div className="mt-5">
+                                <SparkLine
+                                    currentColor={currentColor}
+                                    id="line-sparkline"
+                                    type="Line"
+                                    height="80px"
+                                    width="250px"
+                                    data={SparklineAreaData}
+                                    color="blue"
+                                />
+                            </div>
+
                         </div>
                     </div>
 
