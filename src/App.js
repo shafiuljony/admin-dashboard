@@ -44,8 +44,7 @@ const App = () => {
                   <div>
                       {themeSettings && <ThemeSettings /> }
 
-
-                  <Routes>
+                      <Routes>
                       {/* Dashboard*/}
 
                       <Route path="/" element={ <Ecommerce />}/>
