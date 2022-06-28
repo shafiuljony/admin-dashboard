@@ -1,5 +1,5 @@
 import React from 'react';
-import {ChartsHeader, Header, LineChart} from "../../components";
+import {Header, LineChart} from "../../components";
 
 const Line = () => {
     return(
